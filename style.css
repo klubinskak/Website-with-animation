@@ -149,3 +149,70 @@ footer{
     align-items: center;
     text-align: center;
 }
+.icon{
+    color: black;
+    display: none;
+    cursor: pointer;
+}
+.hamburger-menu{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        position: relative;
+    }
+    .nav-right {
+        display: none;
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container h1{
+        top: 32%;
+        left: 17%;
+    }
+    .nav-right ul{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .nav-right ul li{
+        padding-bottom: 5px;
+    }
+    .nav-right.show{
+        display: flex;
+    }
+    .icon{
+        display: block;
+    }
+    .hamburger-menu{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .about-us-img{
+        padding-top: 30px;
+        top: 75%;
+        left: 18%;
+        width: 250px;
+        height: 270px;
+    }
+    #places{
+        padding: 50px;
+    }
+    #places h2{
+        margin-top: 70px;
+    }
+    .places-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
